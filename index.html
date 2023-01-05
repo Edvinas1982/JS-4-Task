@@ -9,18 +9,17 @@
 </head>
 
 <body>
-    <form>
-        <label for="date">Date</label><br>
-        <input type="text" id="date" name="date" placeholder="enter date"><br><br>
-        <label for="number">Car number</label><br>
-        <input type="text" id="number" name="number" placeholder="enter car number"><br><br>
-        <label for="distance">Distance, m</label><br>
-        <input type="text" id="distance" name="distance" placeholder="enter distance"><br> <br>
-        <label for="time">Time, s</label><br>
-        <input type="text" id="time" name="time" placeholder="enter time"><br> <br>
-        <button id="save">Save</button>
-    </form>
-    <table id='table'>
+    <label for="date">Date</label><br>
+    <input type="text" id="date" placeholder="enter date"><br><br>
+    <label for="number">Car number</label><br>
+    <input type="text" id="number" placeholder="enter car number"><br><br>
+    <label for="distance">Distance, m</label><br>
+    <input type="text" id="distance" placeholder="enter distance"><br> <br>
+    <label for="time">Time, s</label><br>
+    <input type="text" id="time" placeholder="enter time"><br> <br>
+    <button onclick="saveData()">Save</button>
+
+    <table id="table">
         <caption>Saving data</caption>
         <tr>
             <th>Date</th>
@@ -28,6 +27,8 @@
             <th>Distance, m</th>
             <th>Time, s</th>
         </tr>
+        <tbody id="savedData">
+        </tbody>
     </table>
     <script src="main.js"></script>
 </body>

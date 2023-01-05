@@ -351,16 +351,13 @@ body {
   text-align: center;
 }
 
-form {
-  margin-bottom: 30px;
-}
-
 label {
   font-weight: 700;
   font-size: 1.25rem;
 }
 
 caption {
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 
